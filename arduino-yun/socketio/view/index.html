@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web-View Socket.IO Arduino</title>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+    <script src="socket.io/socket.io.js"></script>
+</head>
+<body>
+    <h2> Socket.IO Arduino</h2>
+    <!--<select id='ip-select'>
+        <option value='192.168.0.2'>192.168.0.2</option>
+        <option value='192.168.0.3'>192.168.0.3</option>
+    </select>
+    <input type="button" value="connect" id="connect">-->
+    <select id='room-select'>
+        <option value='arduinoyun'>arduinoyun</option>
+        <option value='cool-room'>cool-room</option>
+    </select>
+    <input type="button" value="join" id="room-join">
+
+    <br>
+    <div id='output'></div>
+    <br>
+    <input type="text" id="room-text">
+    <input type="button" value="send" id="send">
+</body>
+<script src="js/client.js" type="text/javascript"></script>
+</html>
